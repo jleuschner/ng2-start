@@ -1,0 +1,1 @@
+export * from './seite1.component';
