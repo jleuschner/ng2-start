@@ -1,13 +1,14 @@
 import { Component } from '@angular/core';
 
-import { Seite1Component } from './seite1/index';
-
 @Component({
   selector: 'demo',
   template: `
     <h1>Demo</h1>
-    <seite1></seite1>
-    <seite2></seite2>
+    <nav>
+    <a routerLink="seite1" routerLinkActive="active">Seite1</a>
+    <a routerLink="seite2" routerLinkActive="active">Seite2</a>
+    </nav>
+    <router-outlet></router-outlet>
     `
 })
 export class DemoComponent { }
