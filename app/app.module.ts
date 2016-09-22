@@ -7,13 +7,16 @@ import { routing, appRoutingProviders } from './app.routing';
 import { PagenotfoundComponent } from './pagenotfound/pagenotfound.component';
 import { DashboardModule } from './dashboard/index';
 import { DemoModule } from './demo/index';
+import { RestrictedpageModule } from './restricted/index';
+
 
 @NgModule({
     imports: [
         BrowserModule,
         routing,
+        DashboardModule,
         DemoModule,
-        DashboardModule
+        RestrictedpageModule
     ],
     declarations: [
         AppComponent,
