@@ -5,6 +5,8 @@ import { RestrictedpageComponent } from './restrictedpage.component'
 
 import { restrictedpageRouting } from './restrictedpage.routing';
 
+import { AuthGuard } from '../services/auth-guard/auth-guard.service';
+
 @NgModule({
     imports: [
         CommonModule,
@@ -12,6 +14,9 @@ import { restrictedpageRouting } from './restrictedpage.routing';
     ],
     declarations: [
         RestrictedpageComponent
+    ],
+    providers: [
+        AuthGuard
     ]
 })
 export class RestrictedpageModule { }
