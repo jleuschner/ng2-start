@@ -3,6 +3,7 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
 import { routing, appRoutingProviders } from './app.routing';
+import { LoginComponent } from './login/login.component';
 
 import { PagenotfoundComponent } from './pagenotfound/pagenotfound.component';
 import { DashboardModule } from './dashboard/index';
@@ -20,7 +21,11 @@ import { RestrictedpageModule } from './restricted/index';
     ],
     declarations: [
         AppComponent,
+        LoginComponent,
         PagenotfoundComponent
+    ],
+    providers: [
+        appRoutingProviders
     ],
     bootstrap: [AppComponent]
 })
